@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Css/style.css">
+  <title>Netflix</title>
+</head>
+
+<body>
+  <header>
+    <div class="center">
+      <div class="header-left">
+        <a href=""><img src="Images/logo_netflix.png"></a>
+        <div class="menu-header">
+          <ul>
+            <li><a href="">Início</a></li>
+            <li><a href="">Séries</a></li>
+            <li><a href="">Filmes</a></li>
+            <li><a href="">Adicionados Recentemente</a></li>
+            <li><a href="">Minha Lista</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="search">
+          <i class="icon-search"></i>
+        </div>
+        <a href="">INFANTIL</a>
+        <i class="icon-gift"></i>
+        <div class="notifications">
+          <div class="circle-notifications">
+            <span>10</span>
+          </div>
+          <i class="icon-bell-alt"></i>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </header>
+  <section class="destaque">
+    <video autoplay muted loop id="video-destaque">
+      <source src="Movies/arrow.mp4">
+      Seu navegador não suporta videos em HTML5.
+    </video>
+    <div class="overlay"></div>
+    <div class="texto-destaque">
+      <h2>Lorem Ipsum</h2>
+      <h3>Assista a 9 temporada completa agora!</h3>
+      <p>Descrição completa da serie/filme.</p>
+      <br>
+      <a href=""><i class="icon-play"></i>Assistir</a>
+      <a href=""><i class="icon-play"></i>Assistir</a>
+      <a href=""><i class="icon-play"></i>Assistir</a>
+    </div>
+  </section>
+  <section class="vitrine">
+    <div class="vitrine-flex">
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/arrow.jpg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/suits.jpeg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/arrow.jpg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/suits.jpeg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/arrow.jpg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/suits.jpeg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/arrow.jpg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/suits.jpeg');"></div>
+      </div>
+    </div>
+    <div class="vitrine-flex">
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/arrow.jpg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/suits.jpeg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/arrow.jpg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/suits.jpeg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/arrow.jpg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/suits.jpeg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/arrow.jpg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/suits.jpeg');"></div>
+      </div>
+    </div>
+    <div class="vitrine-flex">
+      <div class="vitrine-single-banner" style="margin-bottom: 20px;">
+        <div class="vitrine-wraper" style="background-image: url('Images/arrow.jpg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/suits.jpeg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/arrow.jpg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/suits.jpeg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/arrow.jpg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/suits.jpeg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/arrow.jpg');"></div>
+      </div>
+      <div class="vitrine-single-banner">
+        <div class="vitrine-wraper" style="background-image: url('Images/suits.jpeg');"></div>
+      </div>
+    </div>
+  </section>
+  <script src="Js/jquery.js"></script>
+  <script src="Js/slick.min.js"></script>
+  <script>
+    $('.vitrine-flex').slick({
+      dots: false,
+      arrows: false,
+      infinite: false,
+      centerMode: false,
+      speed: 1000,
+      slidesToShow: 6,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      pauseOnHover: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3
+          }
+        }]
+    })
+
+    $('.vitrine-wraper').hover(function () {
+      $(this).css('z-index', '1000')
+    })
+
+    $('.vitrine-wraper').mouseout(function () {
+      $(this).css('z-index', '0')
+    })
+  </script>
+</body>
+
+</html>
